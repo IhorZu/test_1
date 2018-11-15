@@ -1,0 +1,48 @@
+.article {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+
+  &__header-wrap {
+    margin-bottom: 23px;
+    width: 100%;
+    max-width: 370px;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__body {
+    column-width: 300px;
+    column-count: 2;
+    column-gap: 90px;
+    width: 100%;
+    max-width: 840px;
+  }
+
+  &__text {
+    margin-bottom: 21px;
+    break-inside: avoid;
+    text-indent: 0.9375em;
+  }
+
+  &__list {
+
+  }
+
+  &__list-item {
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: "—";
+      position: absolute;
+      //top: 9px;
+      left: -18px;
+    }
+  }
+}
